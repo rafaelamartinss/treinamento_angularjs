@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/style.css" rel="stylesheet">
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <script src="node_modules/ag-grid-enterprise/dist/ag-grid-enterprise.min.js"></script>
+
+    <script src="src/app.module.js"></script>
+    <script src="src/route.config.js"></script>
+    <script src="src/aggrid.config.js"></script>
+    
+    <script src="src/home/home.controller.js"></script>
+
+    <script src="src/post/post.controller.js"></script>
+    <script src="src/post/post-config-grid.service.js"></script>
+
+    <script src="src/services/post.service.js"></script>
+    
+    <title>Example AngularJS</title>
+    <base href="/">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ui-sref-active="active"><a ui-sref="home" ui-sref-opts="{reload: true}">Home</a></li>
+                    <li ui-sref-active="active"><a ui-sref="post.list" ui-sref-opts="{reload: true}">Post</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="starter-template">
+            <ui-view></ui-view>
+        </div>
+    </div><!-- /.container -->
+</body>
+
+</html>

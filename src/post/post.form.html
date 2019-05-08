@@ -1,0 +1,19 @@
+<h1>Post</h1>
+
+<div class="alert alert-danger" role="alert" ng-show="vm.errors.length > 0">
+    <ul>
+        <li ng-repeat="item in vm.errors">{{item.Message}}</li>
+    </ul>
+</div>
+
+<form name="vm.forms">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" placeholder="title" ng-model="vm.model.title">
+    </div>
+    <div class="form-group">
+        <label for="body">Description</label>
+        <textarea class="form-control" rows="3" id="body" placeholder="Descrição" ng-model="vm.model.body"></textarea>
+    </div>
+    <button class="btn btn-default" ng-click="vm.createOrUpdate()">Salvar</button>
+</form>

@@ -1,0 +1,23 @@
+{
+  "name": "ItzInterisk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.22",
+    "angular": "^1.7.8",
+    "bootstrap": "^3.3.7",
+    "ag-grid": "18.1.1",
+    "ag-grid-enterprise": "18.1.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
